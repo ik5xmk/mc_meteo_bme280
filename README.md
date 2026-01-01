@@ -8,6 +8,6 @@ By doing a web search you can easily find the pinout of the board you are using.
 Please refer to the official MeshCom documentation for possible future changes to the commands to send to the lora board.<br>
 <br>
 ![](https://github.com/ik5xmk/mc_meteo_bme280/blob/main/mc_meteo_bme280_http_bot.jpg)
-</br>
+</br><br>
 The mc_meteo_bm280_http code instead acquires sensor values ​​via Wi-Fi. The Meshcom lora card must be connected to Wi-Fi (see any router configurations if the code is not running on the same LAN as the lora card) and have the "--extudp on" command enabled to allow data reception (UDP port 1799) and transmission as a message via RF. This procedure is similar to the code that manages the card via USB, but can be convenient if there are multiple cards with related BME280 sensors and a single server where the program runs. The configurations relating to the card's IP, the sending group, etc. can be made directly by editing the code. If changes are made to the card's WX page layout in the future, these will also need to be managed in the search section of the code.<br><br>
 ![](https://github.com/ik5xmk/mc_meteo_bme280/blob/main/mc_meteo_bme280_http.jpg)
